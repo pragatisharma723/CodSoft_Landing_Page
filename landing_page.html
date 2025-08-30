@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Pragati Sharma · Computer Science Portfolio</title>
+  <meta name="description" content="Portfolio of Pragati Sharma — Computer Science student & web developer. Projects, skills, experience, and contact." />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg: #0b1020;
+      --fg: #eef2ff;
+      --subtle: #94a3b8;
+      --accent: #073d95;
+      --accent-2: #1dd1f1;
+      --shadow: 0 10px 30px rgba(0,0,0,.25);
+      --radius: 18px;
+    }
+    body{margin:0; font-family:Inter, sans-serif; background:var(--bg); color:var(--fg)}
+    header, footer{
+      background: linear-gradient(90deg, var(--accent), var(--accent-2));
+      color:white; padding:16px; box-shadow: var(--shadow);
+    }
+    header .container, footer .container{display:flex; justify-content:space-between; align-items:center}
+    header h1, footer h1{margin:0; font-size:20px}
+    nav a{color:white; text-decoration:none; margin:0 10px; font-weight:600}
+    nav a:hover{text-decoration:underline}
+    .container{max-width:1100px;margin:0 auto;padding:24px}
+
+    /* Hero */
+    .hero{display:flex; gap:28px; align-items:center; padding:40px 0}
+    .hero img{width:500px; height:200px; object-fit:cover; border-radius:50%; border:6px solid white; box-shadow: var(--shadow)}
+    .hero-content h2{font-size:42px; margin:0 0 16px}
+    .hero-content p{color: var(--subtle)}
+
+    /* Section */
+    section{padding:30px 0; border-top:1px solid rgba(255,255,255,.2)}
+    .section-title{margin-bottom:16px}
+    .section-title h3{margin:0; font-size:24px}
+
+    .card{background:rgba(255,255,255,0.05); padding:20px; border-radius:var(--radius); box-shadow:var(--shadow)}
+    .grid{display:grid; gap:16px}
+    .grid-3{grid-template-columns: repeat(auto-fit,minmax(260px,1fr))}
+
+    footer{font-size:14px}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Pragati Sharma</h1>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#education">Education</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#clubs">Clubs and Position</a>
+        <a href="#contact">Contact</a>
+
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- Hero -->
+    <section class="hero" id="home">
+      <img src="self.jpg" alt="Pragati Sharma photo" />
+      <div class="main-content">
+        <h2>Hi, I'm Pragati Sharma</h2>
+        <p>Computer Science student & passionate web developer. I build responsive, accessible, and beautiful websites using HTML, CSS, and JavaScript.Looking ahead, I aspire to explore innovative technologies, strengthen my expertise in software engineering, and contribute to meaningful projects that make a real-world impact.</p>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about">
+      <div class="section-title"><h3>About Me</h3></div>
+      <div class="card">
+        <!-- <p>I am a Computer Science student interested in frontend development, UI design, and creating impactful web experiences. I enjoy problem-solving and contributing to open-source projects.</p> -->
+         <p>I’m a student with a strong passion for web development and user interface design. I enjoy creating websites that are not only functional but also visually appealing and user-friendly.
+
+My skills include HTML, CSS, JavaScript, React, and modern design tools, and I constantly strive to learn new technologies to stay updated. Through projects and collaborations, I’ve built a foundation in frontend development, responsive design, and problem-solving.
+
+I believe in continuous growth, teamwork, and using technology to make a positive impact. This portfolio highlights my skills, projects, and journey as I work towards becoming a professional developer</p>
+      </div>
+    </section>
+    <!-- Education -->
+    <section id="education">
+      <div class="section-title"><h3>Education</h3></div>
+      <div class="card">
+        <h4>B.Tech in Computer Engineering Specialization in Software Engineering</h4>
+        <p>Vishwakarma Institute of Technology, Pune</p>
+        <p>Currently in 2nd Year (2024 – 2028)</p>
+        <p>Key Coursework & Languages: Web Development,Data Analysis, C, C++, Python, Data Structures</p>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills">
+      <div class="section-title"><h3>Skills</h3></div>
+      <div class="grid grid-3">
+        <div class="card"><h4>Frontend</h4><ul><li>HTML</li><li>CSS</li><li>JavaScript</li><li>React</li></ul></div>
+        <div class="card"><h4>Design</h4><ul><li>Responsive UI</li><li>Tailwind CSS</li><li>Figma</li></ul></div>
+        <div class="card"><h4>Tools</h4><ul><li>Git</li><li>GitHub</li><li>VS Code</li></ul></div>
+        <div class="card"><h4>Data Analysis</h4><ul><li>Ms Excel</li><li>Power Bi</li><li>Tableau</li></ul></div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects">
+      <div class="section-title"><h3>Projects</h3></div>
+      <div class="grid grid-3">
+        <div class="card"><h4>Portfolio Website</h4><p>Personal responsive portfolio built with HTML and CSS.</p></div>
+        <div class="card"><h4>Pathfinding Visualizer</h4><p>Algorithm visualization using JavaScript.</p></div>
+        <div class="card"><h4>Club Management Portal</h4><p>Portal for managing events and sponsorships.</p></div>
+      </div>
+    </section>
+        <!-- Clubs & Positions -->
+    <section id="clubs">
+      <div class="section-title"><h3>Clubs & Positions</h3></div>
+      <div class="grid grid-3">
+        <div class="card">
+          <h4>Public Relations Manager</h4>
+          <p>Social Welfare and Development Club</p>
+        </div>
+        <div class="card">
+          <h4>Design Head</h4>
+          <p>Sports Council</p>
+        </div>
+        <div class="card">
+          <h4>Community Coordinator</h4>
+          <p>Microsoft Learn Student Club</p>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Contact -->
+    <section id="contact">
+      <div class="section-title"><h3>Contact</h3></div>
+      <div class="card">
+        <p>Email: <a href="mailto:pragatisharma23@gmail.com">pragatisharma23@example.com</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/company/codsoft/">linkedin.com/in/pragati-sharma</a></p>
+         <p>Insta: <a href="https://www.instagram.com/codsoft_official/?hl=en">instagram.com/pragati-sharma</a></p>
+        <p>GitHub: <a href="https://github.com/pragatisharma723">github.com/pragati-sharma</a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <span>© <span id="year"></span> Pragati Sharma. All rights reserved.</span>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
