@@ -20,6 +20,6 @@ Personal landing page showcasing projects, skills, and open-source contributions
 - **Tools:** VS Code, Git, GitHub
 
   landing-page/
-├── index.html # Main landing page
-├── self.jpg # Personal photo
-└── README.md # This file
+  - index.html # Main landing page
+  - self.jpg # Personal photo
+  - README.md # This file
